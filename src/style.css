@@ -1,0 +1,30 @@
+:root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202824; background: #f7f8f5; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input { font: inherit; }
+.shell { width: min(100% - 36px, 760px); margin: 0 auto; padding: max(22px, env(safe-area-inset-top)) 0 calc(28px + env(safe-area-inset-bottom)); }
+.topbar { display: flex; align-items: center; justify-content: space-between; min-height: 48px; }
+.brand { color: #202824; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 720; letter-spacing: -.04em; }
+.brand-mark { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 10px; background: #247a62; color: white; font-size: 17px; }
+.local-badge { border: 1px solid #e4e8e3; border-radius: 99px; padding: 7px 10px; color: #607067; font-size: 11px; }
+.welcome { padding: 55px 0 29px; }
+.eyebrow { margin: 0 0 9px; color: #78857d; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+h1 { margin: 0; font-size: clamp(34px, 8vw, 48px); line-height: 1.08; letter-spacing: -.055em; font-weight: 650; }
+.intro { max-width: 460px; color: #68756d; font-size: 15px; line-height: 1.6; margin: 14px 0 0; }
+.card { padding: 22px; border: 1px solid #e9ece8; border-radius: 18px; background: #fff; box-shadow: 0 5px 22px #1e39260a; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+h2 { font-size: 17px; letter-spacing: -.025em; margin: 0; font-weight: 650; }
+.section-heading .eyebrow { margin-bottom: 5px; }
+.edit-label { color: #87928a; font-size: 11px; }
+.goals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 22px; }
+.goal-label { display: flex; align-items: center; gap: 7px; color: #68756d; font-size: 12px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: #9caca0; }
+.dot.calories, .track .calories { background: #247a62; }.dot.carbs, .track .carbs { background: #d6a741; }.dot.protein, .track .protein { background: #6189c9; }.dot.fat, .track .fat { background: #ca8060; }
+.goal-value { margin: 8px 0 10px; font-size: 24px; font-weight: 650; letter-spacing: -.04em; }
+.goal-value small { font-size: 12px; color: #89938d; font-weight: 500; letter-spacing: 0; }
+.track { height: 5px; border-radius: 10px; background: #eef1ed; overflow: hidden; }.track span { display: block; width: 100%; height: 100%; border-radius: inherit; opacity: .75; }
+.empty-state { margin: 66px auto 45px; max-width: 360px; text-align: center; }
+.plate-icon { width: 45px; height: 45px; display: grid; place-items: center; margin: 0 auto 16px; border-radius: 15px; background: #e9f1eb; color: #247a62; font-size: 24px; }
+.empty-state h2 { font-size: 17px; }.empty-state p { margin: 9px 0 0; color: #7a867e; font-size: 13px; line-height: 1.6; }
+.status { display: flex; justify-content: center; align-items: center; gap: 8px; color: #859089; font-size: 11px; }.status-dot { width: 6px; height: 6px; border-radius: 50%; background: #d4a047; }.status-dot.ready { background: #399372; }
+@media (max-width: 480px) { .shell { width: min(100% - 30px, 760px); }.welcome { padding-top: 45px; }.card { padding: 19px 16px; }.goals-grid { gap: 22px 12px; }.section-heading { align-items: flex-end; }.edit-label { max-width: 95px; text-align: right; line-height: 1.35; } }

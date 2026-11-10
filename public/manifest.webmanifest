@@ -1,0 +1,20 @@
+{
+  "id": "/MacroLog/",
+  "name": "MacroLog",
+  "short_name": "MacroLog",
+  "description": "Tu registro personal de alimentación, guardado en este dispositivo.",
+  "lang": "es",
+  "start_url": "/MacroLog/",
+  "scope": "/MacroLog/",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#f7f8f5",
+  "icons": [
+    {
+      "src": "/MacroLog/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
